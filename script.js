@@ -2,7 +2,7 @@ function updatePage(){
 var msg = window.document.getElementById('msg')
 var img = window.document.getElementById('image')
 var date = new Date()
-var hora = 5//date.getHours()
+var hora = date.getHours()
 msg.innerHTML = `The Time is <strong>${hora} O'clock</strong>`
 if(hora >= 0 && hora < 12){
     img.src = 'morning.png'
